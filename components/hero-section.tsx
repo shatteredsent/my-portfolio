@@ -25,6 +25,15 @@ export function HeroSection() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="animate-fade-in-up">
+          {/* Add profile image */}
+          <div className="mb-6">
+            <img
+            src+"/profile.jpg"
+            alt="Jake Shafer"
+            className="w-32 h-32 rounded-full mx-auto border-4 vorder-primary/20 shadow-lg object-cover"
+            />
+          </div>
+          
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
             Hi, I'm{" "}
             <span className="text-primary bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
@@ -63,7 +72,7 @@ export function HeroSection() {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com/in/jake-shafer1"
+              href="https://www.linkedin.com/in/jake-shafer1"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-200"
