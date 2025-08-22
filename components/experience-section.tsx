@@ -6,7 +6,7 @@ const experiences = [
   {
     title: "Software Developer (Full Stack)",
     company: "Banyan Labs",
-    location: "Remote",
+    location: "Tennessee",
     period: "2025 - Present",
     description:
       "Design, develop, and deploy full-stack applications using JavaScript, Python, and SQL. Collaborate in Agile/Scrum environment with focus on clean, maintainable code and API integration.",
@@ -20,7 +20,7 @@ const experiences = [
   {
     title: "Lead Sales Consultant",
     company: "Reiselman Motor Company",
-    location: "Arkansas",
+    location: "Tennessee",
     period: "2023 - 2024",
     description:
       "Recruited and trained junior sales staff while developing consultative sales techniques. Led performance coaching and retention initiatives to enhance team effectiveness.",
@@ -34,7 +34,7 @@ const experiences = [
   {
     title: "High School Principal",
     company: "Augusta High School",
-    location: "Augusta, AR",
+    location: "Arkansas",
     period: "2022 - 2023",
     description:
       "Directed personnel management including licensure verification, recruitment, and performance evaluation. Ensured regulatory compliance while managing staff development and certification processes.",
@@ -62,7 +62,7 @@ const experiences = [
   {
     title: "Lead Literacy Teacher",
     company: "Palestine-Wheatley High School",
-    location: "Palestine, AR",
+    location: "Arkansas",
     period: "2015 - 2019",
     description:
       "Mentored new teachers and supported hiring processes within academic teams. Delivered data-informed instruction and participated in school improvement planning initiatives.",
