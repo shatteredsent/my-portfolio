@@ -26,11 +26,11 @@ export function HeroSection() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="animate-fade-in-up">
           {/* Add profile image */}
-          <div className="mb-6">
+          <div className="mb-6 animate-on-scroll">
             <img
             src="/profile.jpg"
             alt="Jake Shafer"
-            className="w-32 h-32 rounded-full mx-auto border-4 border-primary/20 shadow-lg object-cover"
+            className="w-32 h-32 rounded-full mx-auto border-4 border-primary/20 shadow-lg object-cover hover-pulse"
             />
           </div>
           
@@ -41,8 +41,8 @@ export function HeroSection() {
             </span>
           </h1>
           <div className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-           <div>Full-Stack Developer & Data-Driven Problem Solver </div>
-<div>Transforming Ideas into Impact Through Code and Leadership</div>
+           <div className="animate-on-scroll delay-1">Full-Stack Developer & Data-Driven Problem Solver</div>
+<div className="animate-on-scroll delay-2">Transforming Ideas into Impact Through Code and Leadership</div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -63,7 +63,7 @@ export function HeroSection() {
           </div>
 
           <div className="flex justify-center space-x-6">
-            <a
+            
               href="https://github.com/shatteredsent"
               target="_blank"
               rel="noopener noreferrer"
@@ -71,7 +71,7 @@ export function HeroSection() {
             >
               <Github size={24} />
             </a>
-            <a
+            
               href="https://www.linkedin.com/in/jake-shafer1"
               target="_blank"
               rel="noopener noreferrer"
@@ -79,7 +79,7 @@ export function HeroSection() {
             >
               <Linkedin size={24} />
             </a>
-            <a
+            
               href="mailto:j.shafer072017@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors duration-200"
             >
