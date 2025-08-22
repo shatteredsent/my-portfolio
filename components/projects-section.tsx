@@ -4,13 +4,13 @@ import { Badge } from "@/components/ui/badge"
 import { ExternalLink, Github } from "lucide-react"
 
 const projects = [
- {
+{
   title: "Arkansas Education Performance Dashboard",
   description:
     "Data visualization dashboard showcasing district performance metrics and educational outcomes across 13 Arkansas school districts. Built during my tenure as Education Consultant at Arkansas Department of Education.",
   image: "/Header.png",
   technologies: ["React", "TypeScript", "CSS Grid", "Data Visualization"],
-  liveUrl: "#",
+  liveUrl: "https://github.com/shatteredsent/my-portfolio/tree/main/projects/education-dashboard",
   githubUrl: "https://github.com/shatteredsent/my-portfolio/tree/main/projects/education-dashboard",
 },
   {
