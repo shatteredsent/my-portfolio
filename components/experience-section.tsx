@@ -4,59 +4,73 @@ import { Building, Calendar, MapPin } from "lucide-react"
 
 const experiences = [
   {
-    title: "Senior Full-Stack Developer",
-    company: "TechCorp Solutions",
-    location: "San Francisco, CA",
-    period: "2022 - Present",
-    description:
-      "Lead development of scalable web applications serving 100K+ users. Architected microservices infrastructure and mentored junior developers.",
-    technologies: ["React", "Node.js", "AWS", "PostgreSQL", "Docker"],
-    achievements: [
-      "Reduced application load time by 40% through optimization",
-      "Led team of 5 developers on major product redesign",
-      "Implemented CI/CD pipeline reducing deployment time by 60%",
-    ],
-  },
-  {
-    title: "Full-Stack Developer",
-    company: "StartupXYZ",
-    location: "Austin, TX",
-    period: "2020 - 2022",
-    description:
-      "Developed MVP for fintech startup from concept to production. Built responsive web applications and RESTful APIs.",
-    technologies: ["Vue.js", "Python", "FastAPI", "MongoDB", "Redis"],
-    achievements: [
-      "Built core platform serving 10K+ active users",
-      "Integrated payment processing with 99.9% uptime",
-      "Developed real-time notification system",
-    ],
-  },
-  {
-    title: "Frontend Developer",
-    company: "Digital Agency Pro",
+    title: "Software Developer (Full Stack)",
+    company: "Banyan Labs",
     location: "Remote",
-    period: "2019 - 2020",
+    period: "2025 - Present",
     description:
-      "Created responsive websites and web applications for diverse clients. Collaborated with design teams to implement pixel-perfect UIs.",
-    technologies: ["JavaScript", "React", "SASS", "WordPress", "jQuery"],
+      "Design, develop, and deploy full-stack applications using JavaScript, Python, and SQL. Collaborate in Agile/Scrum environment with focus on clean, maintainable code and API integration.",
+    technologies: ["JavaScript", "React", "Node.js", "Python", "SQL", "Git", "GitHub"],
     achievements: [
-      "Delivered 25+ client projects on time and budget",
-      "Improved website performance scores by average 35%",
-      "Established component library used across projects",
+      "Building and integrating APIs to enhance data accessibility",
+      "Conducting peer code reviews to ensure efficient code quality",
+      "Streamlining workflows for end users through database solutions",
     ],
   },
   {
-    title: "Junior Web Developer",
-    company: "WebDev Studio",
-    location: "New York, NY",
-    period: "2018 - 2019",
+    title: "Lead Sales Consultant",
+    company: "Reiselman Motor Company",
+    location: "Arkansas",
+    period: "2023 - 2024",
     description:
-      "Assisted in development of e-commerce platforms and corporate websites. Gained experience in full development lifecycle.",
-    technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      "Recruited and trained junior sales staff while developing consultative sales techniques. Led performance coaching and retention initiatives to enhance team effectiveness.",
+    technologies: ["Team Training", "Performance Analytics", "Customer Relations"],
     achievements: [
-      "Contributed to 15+ successful project launches",
-      "Learned modern development practices and tools",
-      "Collaborated effectively in agile development environment",
+      "Recruited and trained junior sales staff",
+      "Enhanced team sales performance through coaching",
+      "Developed consultative sales techniques and service models",
+    ],
+  },
+  {
+    title: "High School Principal",
+    company: "Augusta High School",
+    location: "Augusta, AR",
+    period: "2022 - 2023",
+    description:
+      "Directed personnel management including licensure verification, recruitment, and performance evaluation. Ensured regulatory compliance while managing staff development and certification processes.",
+    technologies: ["Data Analysis", "Performance Management", "Regulatory Compliance"],
+    achievements: [
+      "Managed 40+ annual staff performance evaluations",
+      "Implemented certification and compliance meeting protocols",
+      "Collaborated with district teams to align hiring with policy standards",
+    ],
+  },
+  {
+    title: "Education Consultant & Literacy Specialist",
+    company: "Arkansas Department of Education",
+    location: "Arkansas",
+    period: "2019 - 2022",
+    description:
+      "Designed and facilitated professional training for 1,500+ education professionals across 13 districts. Managed data-driven workforce development and secured state funding through strategic partnerships.",
+    technologies: ["Data Analysis", "Training Design", "Performance Analytics"],
+    achievements: [
+      "Increased recruitment and retention by 7% in targeted schools",
+      "Secured and managed $90K annual state-funded grant",
+      "Improved hiring pipelines and reduced licensure processing times",
+    ],
+  },
+  {
+    title: "Lead Literacy Teacher",
+    company: "Palestine-Wheatley High School",
+    location: "Palestine, AR",
+    period: "2015 - 2019",
+    description:
+      "Mentored new teachers and supported hiring processes within academic teams. Delivered data-informed instruction and participated in school improvement planning initiatives.",
+    technologies: ["Data-Informed Instruction", "Team Leadership", "Performance Coaching"],
+    achievements: [
+      "Mentored and onboarded new teaching staff",
+      "Participated in hiring panels and school improvement planning",
+      "Delivered tailored instruction based on student performance data",
     ],
   },
 ]
