@@ -4,15 +4,15 @@ import { Badge } from "@/components/ui/badge"
 import { ExternalLink, Github } from "lucide-react"
 
 const projects = [
-  {
-    title: "FinanceFlow - SaaS Platform",
-    description:
-      "Enterprise financial management platform serving 10K+ users with real-time analytics, automated reporting, and multi-currency support.",
-    image: "/modern-financial-dashboard.png",
-    technologies: ["Next.js 14", "TypeScript", "Prisma", "PostgreSQL", "Stripe", "Tailwind CSS"],
-    liveUrl: "https://financeflow-demo.vercel.app",
-    githubUrl: "https://github.com/alexchen-dev/financeflow",
-  },
+ {
+  title: "Arkansas Education Performance Dashboard",
+  description:
+    "Data visualization dashboard showcasing district performance metrics and educational outcomes across 13 Arkansas school districts. Built during my tenure as Education Consultant at Arkansas Department of Education.",
+  image: "/Header.png",
+  technologies: ["React", "TypeScript", "CSS Grid", "Data Visualization"],
+  liveUrl: "#",
+  githubUrl: "https://github.com/shatteredsent/my-portfolio/tree/main/projects/education-dashboard",
+},
   {
     title: "DevCollab - Team Management",
     description:
