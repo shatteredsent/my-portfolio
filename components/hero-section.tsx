@@ -28,9 +28,9 @@ export function HeroSection() {
           {/* Add profile image */}
           <div className="mb-6">
             <img
-            src+"/profile.jpg"
+            src="/profile.jpg"
             alt="Jake Shafer"
-            className="w-32 h-32 rounded-full mx-auto border-4 vorder-primary/20 shadow-lg object-cover"
+            className="w-32 h-32 rounded-full mx-auto border-4 border-primary/20 shadow-lg object-cover"
             />
           </div>
           
