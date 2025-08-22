@@ -32,8 +32,8 @@ export function HeroSection() {
             </span>
           </h1>
           <div className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-           <div>Software Developer and Data Driven Strategist </div>
-<div>Passionate about People, Process, and Performance</div>
+           <div>Full-Stack Developer & Data-Driven Problem Solver </div>
+<div>Transforming Ideas into Impact Through Code and Leadership</div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -55,7 +55,7 @@ export function HeroSection() {
 
           <div className="flex justify-center space-x-6">
             <a
-              href="https://github.com/alexchen-dev"
+              href="https://github.com/shatteredsent"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-200"
@@ -63,7 +63,7 @@ export function HeroSection() {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com/in/alexchen-dev"
+              href="https://linkedin.com/in/jake-shafer1"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-200"
@@ -71,7 +71,7 @@ export function HeroSection() {
               <Linkedin size={24} />
             </a>
             <a
-              href="mailto:alex.chen.dev@gmail.com"
+              href="mailto:j.shafer072017@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors duration-200"
             >
               <Mail size={24} />
