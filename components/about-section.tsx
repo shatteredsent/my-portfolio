@@ -34,17 +34,18 @@ export function AboutSection() {
             </div>
             <div className="flex justify-center">
               <div className="relative">
+                <img 
+                  src="/profile.jpg" 
+                  alt="Jake Shafer" 
+                  className="w-80 h-80 rounded-full object-cover shadow-lg border-4 border-primary/20"
+                />
+                
+                {/* Fallback: If you want to keep the placeholder as backup, uncomment this:
                 <div className="w-80 h-80 rounded-full bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center border-4 border-primary/20">
                   <div className="w-72 h-72 rounded-full bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center text-white text-8xl font-bold shadow-lg">
                     JS
                   </div>
                 </div>
-                {/* Uncomment and replace with your actual photo if desired
-                <img 
-                  src="/your-photo.jpg" 
-                  alt="Jake Shafer" 
-                  className="w-80 h-80 rounded-full object-cover shadow-lg border-4 border-primary/20"
-                />
                 */}
               </div>
             </div>

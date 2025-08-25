@@ -25,15 +25,6 @@ export function HeroSection() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="animate-fade-in-up">
-          {/* Add profile image */}
-          <div className="mb-6 animate-on-scroll">
-            <img
-              src="/profile.jpg"
-              alt="Jake Shafer"
-              className="w-32 h-32 rounded-full mx-auto border-4 border-primary/20 shadow-lg object-cover hover-pulse"
-            />
-          </div>
-          
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
             Hi, I'm{" "}
             <span className="text-primary bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
