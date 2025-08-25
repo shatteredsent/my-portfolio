@@ -53,7 +53,7 @@ export function AboutSection() {
           
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-primary">5+</div>
+              <div className="text-3xl font-bold text-primary">10+</div>
               <div className="text-sm text-muted-foreground">Years in Education</div>
             </div>
             <div>
