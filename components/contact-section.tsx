@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, Phone, MapPin, Send } from "lucide-react"
+import emailjs from '@emailjs/browser'
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -16,13 +17,45 @@ export function ContactSection() {
     subject: "",
     message: "",
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData)
-    // Reset form
-    setFormData({ name: "", email: "", subject: "", message: "" })
+    setIsSubmitting(true)
+    setSubmitStatus('idle')
+
+    try {
+      // Your actual EmailJS credentials
+      const result = await emailjs.send(
+        'service_ifuqm19',     // Your service ID
+        'template_j84t6os',    // Your template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          to_name: 'Jake Shafer',
+        },
+        'dEJFtGyFIOgkj8ynZ'    // Your public key
+      )
+
+      console.log('Email sent successfully:', result)
+      setSubmitStatus('success')
+      setFormData({ name: "", email: "", subject: "", message: "" })
+      
+      // Clear success message after 5 seconds
+      setTimeout(() => setSubmitStatus('idle'), 5000)
+      
+    } catch (error) {
+      console.error('Email send failed:', error)
+      setSubmitStatus('error')
+      
+      // Clear error message after 5 seconds
+      setTimeout(() => setSubmitStatus('idle'), 5000)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -54,7 +87,12 @@ export function ContactSection() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-card-foreground">Email</h3>
-                      <p className="text-muted-foreground">j.shafer072017@gmail.com</p>
+                      <a 
+                        href="mailto:j.shafer072017@gmail.com"
+                        className="text-primary hover:text-primary/80 transition-colors"
+                      >
+                        j.shafer072017@gmail.com
+                      </a>
                     </div>
                   </div>
                 </CardContent>
@@ -68,7 +106,12 @@ export function ContactSection() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-card-foreground">Phone</h3>
-                      <p className="text-muted-foreground">Contact via email</p>
+                      <a 
+                        href="tel:+16158675309"
+                        className="text-primary hover:text-primary/80 transition-colors"
+                      >
+                        (615) 867-5309
+                      </a>
                     </div>
                   </div>
                 </CardContent>
@@ -97,6 +140,18 @@ export function ContactSection() {
                 <CardTitle className="text-2xl font-bold text-card-foreground">Send me a message</CardTitle>
               </CardHeader>
               <CardContent>
+                {/* Status Messages */}
+                {submitStatus === 'success' && (
+                  <div className="mb-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
+                    Message sent successfully! I'll get back to you soon.
+                  </div>
+                )}
+                {submitStatus === 'error' && (
+                  <div className="mb-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
+                    Failed to send message. Please try again or email me directly.
+                  </div>
+                )}
+
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
@@ -110,6 +165,7 @@ export function ContactSection() {
                         required
                         value={formData.name}
                         onChange={handleChange}
+                        disabled={isSubmitting}
                         className="bg-input border-border focus:border-primary focus:ring-primary"
                         placeholder="Your full name"
                       />
@@ -125,6 +181,7 @@ export function ContactSection() {
                         required
                         value={formData.email}
                         onChange={handleChange}
+                        disabled={isSubmitting}
                         className="bg-input border-border focus:border-primary focus:ring-primary"
                         placeholder="your.email@example.com"
                       />
@@ -142,6 +199,7 @@ export function ContactSection() {
                       required
                       value={formData.subject}
                       onChange={handleChange}
+                      disabled={isSubmitting}
                       className="bg-input border-border focus:border-primary focus:ring-primary"
                       placeholder="What's this about?"
                     />
@@ -158,6 +216,7 @@ export function ContactSection() {
                       rows={6}
                       value={formData.message}
                       onChange={handleChange}
+                      disabled={isSubmitting}
                       className="bg-input border-border focus:border-primary focus:ring-primary resize-none"
                       placeholder="Tell me about your project or how I can help you..."
                     />
@@ -166,10 +225,11 @@ export function ContactSection() {
                   <Button
                     type="submit"
                     size="lg"
-                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-medium"
+                    disabled={isSubmitting}
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-medium disabled:opacity-50"
                   >
                     <Send size={18} className="mr-2" />
-                    Send Message
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
                   </Button>
                 </form>
               </CardContent>
