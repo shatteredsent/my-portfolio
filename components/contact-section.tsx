@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin, Send } from "lucide-react"
+import { Mail, MapPin, Send } from "lucide-react"
 import emailjs from '@emailjs/browser'
 
 export function ContactSection() {
@@ -98,24 +98,7 @@ export function ContactSection() {
                 </CardContent>
               </Card>
 
-              <Card className="border-border bg-card">
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
-                    <div className="p-3 bg-primary/10 rounded-lg mr-4">
-                      <Phone className="text-primary" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-card-foreground">Phone</h3>
-                      <a 
-                        href="tel:+16158675309"
-                        className="text-primary hover:text-primary/80 transition-colors"
-                      >
-                        (615) 867-5309
-                      </a>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+
 
               <Card className="border-border bg-card">
                 <CardContent className="p-6">
