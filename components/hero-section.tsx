@@ -48,13 +48,6 @@ export function HeroSection() {
               variant="outline"
               size="lg"
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 text-lg font-medium bg-transparent"
-            >
-              View Resume
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 text-lg font-medium bg-transparent"
               onClick={() => window.open('/Jacob_Shafer_Resume2025.pdf', '_blank', 'width=800,height=1000')}
             >
               View Resume
