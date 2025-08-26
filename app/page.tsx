@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/navigation"
 import { HeroSection } from "@/components/hero-section"
 import { AboutSection } from "@/components/about-section"
+import { ByTheNumbersSection } from "@/components/by-the-numbers-section"
 import { SkillsSection } from "@/components/skills-section"
 import { ProjectsSection } from "@/components/projects-section"
 import { ExperienceSection } from "@/components/experience-section"
@@ -13,6 +14,7 @@ export default function Home() {
       <Navigation />
       <HeroSection />
       <AboutSection />
+      <ByTheNumbersSection />
       <SkillsSection />
       <ProjectsSection />
       <ExperienceSection />
