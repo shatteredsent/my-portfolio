@@ -1,7 +1,25 @@
+import { FC } from "react";
+
+interface TimelineStepType {
+  title: string;
+  description: string;
+  period: string;
+  position: string;
+  current?: boolean;
+}
+
+interface TimelineStepProps {
+  step: TimelineStepType;
+  index: number;
+}
+
+interface TimelineCardProps {
+  step: TimelineStepType;
+}
 const stats = [
   { value: "10+", label: "Years Leadership" },
   { value: "1500+", label: "Professionals Trained" },
-  { value: "$90K", label: "Grant Managed" },
+  { value: "$270K", label: "Grant Managed" },
   { value: "∞", label: "Problems Solved" }
 ];
 
@@ -34,35 +52,28 @@ const timelineSteps = [
   }
 ];
 
-const TimelineStep = ({ step, index }) => {
+const TimelineStep: FC<TimelineStepProps> = ({ step, index }) => {
   const isLeft = step.position === "left";
-  
   return (
     <div className="flex items-center justify-between">
-      <div className={`w-5/12 ${isLeft ? "text-right" : ""}`}>
-        {isLeft && <TimelineCard step={step} />}
-      </div>
-      
-      <div className={`w-4 h-4 bg-primary rounded-full border-4 border-background z-10 ${
-        step.current ? "ring-4 ring-primary/20" : ""
-      }`} />
-      
-      <div className={`w-5/12 ${!isLeft ? "text-left" : ""}`}>
-        {!isLeft && <TimelineCard step={step} />}
-      </div>
+      <div className={`w-5/12 ${isLeft ? "text-right" : ""}`}>{isLeft && <TimelineCard step={step} />}</div>
+      <div className={`w-4 h-4 bg-primary rounded-full border-4 border-background z-10 ${step.current ? "ring-4 ring-primary/20" : ""}`} />
+      <div className={`w-5/12 ${!isLeft ? "text-left" : ""}`}>{!isLeft && <TimelineCard step={step} />}</div>
     </div>
   );
 };
 
-const TimelineCard = ({ step }) => (
-  <div className={`bg-card p-4 rounded-lg shadow-sm border ${
-    step.current ? "border-primary/30" : ""
-  }`}>
-    <h4 className="font-semibold text-primary">{step.title}</h4>
-    <p className="text-sm text-muted-foreground">{step.description}</p>
-    <p className="text-xs text-muted-foreground mt-1">{step.period}</p>
-  </div>
-);
+const TimelineCard: FC<TimelineCardProps> = ({ step }) => {
+  return (
+    <div className={`bg-card p-4 rounded-lg shadow-sm border ${
+      step.current ? "border-primary/30" : ""
+    }`}>
+      <h4 className="font-semibold text-primary">{step.title}</h4>
+      <p className="text-sm text-muted-foreground">{step.description}</p>
+      <p className="text-xs text-muted-foreground mt-1">{step.period}</p>
+    </div>
+  );
+};
 
 export function AboutSection() {
   return (
