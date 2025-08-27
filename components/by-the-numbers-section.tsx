@@ -61,7 +61,7 @@ const impactMetrics = [
 const summaryStats = [
   { value: "10+", label: "Years Leadership Experience" },
   { value: "3", label: "Industries (Education, Sales, Tech)" },
-  { value: "5", label: "States Impacted (AR, TN)" },
+  { value: "5", label: "States Impacted" },
   { value: "∞", label: "Problems Solved" }
 ];
 
