@@ -19,7 +19,7 @@ const projects = [
       "Cross-platform meal planning application that allows users to select recipes for each day of the week and automatically generates shopping lists based on selected ingredients. Features Alexa integration for voice-activated shopping list management.",
     image: "/meal-planner-preview.png",
     technologies: ["Flutter", "Dart", "Alexa Skills Kit", "Cross-platform Development"],
-    liveUrl: "https://shatteredsent.github.io/my_app/",
+  liveUrl: "https://shatteredsent.github.io/meal_planner_app/",
     githubUrl: "https://github.com/shatteredsent/my_app",
   },
   {
