@@ -32,7 +32,7 @@ export function HeroSection() {
             </span>
           </h1>
           <div className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            <div className="animate-on-scroll delay-1">Full-Stack Developer & Data-Driven Problem Solver</div>
+            <div className="animate-on-scroll delay-1">Data Engineer & Data-Driven Problem Solver</div>
             <div className="animate-on-scroll delay-2">Transforming Ideas into Impact Through Code and Leadership</div>
           </div>
 

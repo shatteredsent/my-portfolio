@@ -4,16 +4,18 @@ import { Building, Calendar, MapPin, TrendingUp } from "lucide-react"
 
 const experiences = [
   {
-    title: "Software Developer (Full Stack)",
+    title: "Data Engineer",
     company: "Banyan Labs",
     location: "Tennessee",
     period: "2025 - Present",
-    description: "Design, develop, and deploy full-stack applications using JavaScript, Python, and SQL. Collaborate in Agile/Scrum environment with focus on clean, maintainable code and API integration.",
-    technologies: ["JavaScript", "React", "Node.js", "Python", "SQL", "Git", "GitHub"],
+    description: "Design and implement ETL pipelines for data processing and integration. Build automated workflows for data extraction, transformation, and loading using Python and SQL.",
+    technologies: ["Python", "SQL", "GoLang", "PostgreSQL", "MySQL", "Git", "GitHub"],
     achievements: [
       "Building and integrating APIs to enhance data accessibility",
-      "Conducting peer code reviews to ensure efficient code quality",
+      "Building ETL pipelines for data processing and automation",
       "Streamlining workflows for end users through database solutions",
+      "Conducting data quality analysis and validation",
+      "Optimizing database queries and data workflows for improved performance",
     ],
     metrics: []
   },
@@ -160,7 +162,7 @@ const MetricsSection = ({ metrics }: { metrics: { value: string; label: string }
       Impact Metrics
     </h4>
     <div className="grid grid-cols-2 gap-3 mb-4">
-  {metrics.map((metric: { value: string; label: string }, index: number) => (
+      {metrics.map((metric: { value: string; label: string }, index: number) => (
         <div key={index} className="bg-primary/5 rounded-lg p-3 text-center border border-primary/10">
           <div className="text-lg font-bold text-primary">{metric.value}</div>
           <div className="text-xs text-muted-foreground">{metric.label}</div>
@@ -174,7 +176,7 @@ const AchievementsSection = ({ achievements }: { achievements: string[] }) => (
   <div className="mb-4">
     <h4 className="font-semibold text-card-foreground mb-2">Key Achievements:</h4>
     <ul className="space-y-1">
-  {achievements.map((achievement: string, index: number) => (
+      {achievements.map((achievement: string, index: number) => (
         <li key={index} className="text-sm text-muted-foreground flex items-start">
           <span className="text-primary mr-2 mt-0.5">•</span>
           <span>{achievement}</span>
@@ -186,7 +188,7 @@ const AchievementsSection = ({ achievements }: { achievements: string[] }) => (
 
 const TechnologiesSection = ({ technologies }: { technologies: string[] }) => (
   <div className="flex flex-wrap gap-2">
-  {technologies.map((tech: string, index: number) => (
+    {technologies.map((tech: string, index: number) => (
       <Badge key={index} variant="secondary" className="bg-secondary/50 text-secondary-foreground text-xs">
         {tech}
       </Badge>

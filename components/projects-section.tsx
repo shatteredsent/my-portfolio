@@ -31,6 +31,18 @@ const projects = [
     liveUrl: "https://shatteredsent.github.io/Shattered-Sent/",
     githubUrl: "https://github.com/shatteredsent/Shattered-Sent",
   },
+  {
+    title: "Customer Data Processing Pipeline",
+    description: "End-to-end ETL pipeline that extracts customer data from multiple sources, transforms and validates the data for consistency, and loads it into a PostgreSQL database. Includes automated data quality checks, error handling, and performance monitoring to ensure reliable data processing workflows.",
+    image: "/etl-pipeline-preview.png", // You'll need to create this
+    technologies: ["Python", "PostgreSQL", "SQL", "Pandas", "ETL", "Data Validation"],
+  },
+  {
+    title: "Automated Data Integration System",
+    description: "Currently developing a scalable ETL pipeline to automate data integration from external APIs and flat files. Features include real-time data processing, transformation logic for data normalization, and automated loading into data warehouse. Implementing comprehensive logging and monitoring for production deployment.",
+    image: "/data-integration-preview.png", // You'll need to create this  
+    technologies: ["Python", "SQL", "API Integration", "Data Warehousing", "ETL Automation", "JSON Processing"],
+  },
 ]
 
 export function ProjectsSection() {
