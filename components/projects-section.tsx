@@ -34,7 +34,7 @@ const projects = [
   {
     title: "Customer Data Processing Pipeline",
     description: "End-to-end ETL pipeline that extracts customer data from multiple sources, transforms and validates the data for consistency, and loads it into a PostgreSQL database. Includes automated data quality checks, error handling, and performance monitoring to ensure reliable data processing workflows.",
-    image: "/etl-pipeline-preview.png", // You'll need to create this
+    image: "/ETL_Pipeline.png", // You'll need to create this
     technologies: ["Python", "PostgreSQL", "SQL", "Pandas", "ETL", "Data Validation"],
   },
   {
